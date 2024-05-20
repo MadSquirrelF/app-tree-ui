@@ -1,0 +1,84 @@
+.Navbar {
+    width: 100%;
+    height: var(--navbar-height);
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-primary);
+
+    @media screen and (max-width: 500px) {
+        padding: 10px 5px;
+    }
+}
+
+.logo {
+    width: 175px;
+    height: 35px;
+    margin-left: 30px;
+    padding-top: 5px;
+
+    @media screen and (max-width: 500px) {
+        width: auto;
+        height: 25px;
+        margin-left: 10px;
+    }
+}
+
+.btnWrapper {
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+}
+
+.likeBtn {
+    position: relative;
+
+    .likeCount {
+        color: var(--text-white);
+        position: absolute;
+        min-width: 20px;
+        min-height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 5px;
+        bottom: -7px;
+        right: -7px;
+        background-color: var(--text-red);
+
+        span {
+            line-height: 1;
+            font-size: 11px;
+        }
+    }
+}
+
+.contacts {
+    a {
+        font-weight: 500;
+        font-size: 11px;
+
+        @media screen and (max-width: 400px) {
+            font-size: 10px;
+        }
+    }
+}
+
+.avatarBtn {
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+
+    @media screen and (max-width: 400px) {
+        display: none;
+    }
+}

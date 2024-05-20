@@ -1,0 +1,19 @@
+.AppLink {
+    color: var(--text-primary);
+}
+
+.default {
+    color: var(--active-color-default);
+}
+
+.red {
+    color: red;
+}
+
+.primary {
+    line-height: 1;
+
+    &:hover {
+        color: var(--text-secondary);
+    }
+}

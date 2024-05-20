@@ -1,0 +1,68 @@
+.Button {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.clear {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.default {
+    border-radius: 10px;
+    padding: 10px 25px;
+    color: white;
+    background-color: var(--active-color-default);
+    filter: drop-shadow(-1px 1px 4px rgb(0 0 0 / 25%));
+
+    &:hover {
+        background-color: var(--active-color-hover);
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+
+    &:disabled,
+    &[disabled] {
+        background-color: var(--active-color-disabled);
+        pointer-events: none;
+    }
+}
+
+.svg_clean {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    padding: 7px;
+    color: var(--text-secondary);
+    background: transparent;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    &:active {
+        background: var(--secondary-btn-hover);
+
+        svg {
+            transform: scale(0.97);
+        }
+    }
+}

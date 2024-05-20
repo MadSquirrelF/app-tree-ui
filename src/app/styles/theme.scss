@@ -1,0 +1,27 @@
+:root {
+    --text-black-inverted-theme: #000;
+    --text-black: #000;
+    --text-white: #fff;
+    --text-primary: #464646;
+    --text-light-gray: #d2d2d4;
+    --text-secondary: #737374;
+    --border-primary: #d2d0dc;
+    --border-primary-hover: #c5c3ce;
+    --border-vertical-cart: #a0a0a0;
+    --bg-primary: #fff;
+    --bg-secondary: #ecf0f8;
+    --bg-button: #fff;
+    --secondary-btn-hover: #dce8ff;
+    --active-color-default: #3d13dd;
+    --active-color-hover: #5d35fe;
+    --active-color-disabled: #a18af9;
+    --text-red: #f00;
+    --error-color: #ea334d;
+    --error-color-hover: #e8455d;
+    --error-color-disabled: #b8364a;
+    --error-bg:
+        linear-gradient(0deg, rgb(234 51 77 / 10%), rgb(234 51 77 / 10%)),
+        #fff;
+    --slider-shadow: inset 0 1px 1px #ddd, 0 2px 3px #ccc;
+    --box-shadow-default: -1px 1px 4px 0 rgb(0 0 0 / 25%);
+}

@@ -1,0 +1,39 @@
+/* stylelint-disable import-notation */
+@import "reset";
+@import "variables/global";
+@import "theme";
+
+html,
+body {
+    height: 100%;
+    background-color: white;
+}
+
+body {
+    font-family: var(--font-family-main);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.app {
+    background-color: var(--bg-secondary);
+    min-height: 100vh;
+}
+
+.content-page {
+    display: flex;
+}
+
+.block {
+    position: relative;
+    padding: 50px;
+    z-index: 1;
+    background-color: var(--bg-primary);
+    border-radius: 20px;
+    box-shadow: var(--box-shadow-default);
+
+    @media screen and (max-width: 800px) {
+        padding: 20px;
+    }
+}

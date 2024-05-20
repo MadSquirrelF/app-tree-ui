@@ -1,0 +1,25 @@
+.tree {
+    height: 700px;
+}
+
+@media screen and (max-width: 1200px) {
+    .LoginPage {
+        flex-direction: column;
+    }
+
+    .tree {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .LoginPage {
+        flex-direction: column;
+    }
+
+    .tree {
+        height: 100%;
+        width: 100%;
+        max-width: 380px;
+    }
+}
